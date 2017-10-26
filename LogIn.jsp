@@ -49,13 +49,14 @@
             
     }
           </script>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+       </head>
         <title>LogIn Page</title>
-        <center><b><h2 style="font-family: cursive" ><i><u>LogIn</u></i></h2></b></center></head>
+       
         
-    </head>
+    
     <body>
-        
+          <center><b><h2 style="font-family: cursive" ><i><u>LogIn</u></i></h2></b></center>
        
        
         <%
@@ -75,7 +76,7 @@
             
            if(rs.next())
             {
-            response.sendRedirect("GuestHome.jsp");
+            response.sendRedirect("../User/HomePage.jsp");
             }
            else if(rs1.next())
             {
@@ -97,18 +98,16 @@
                   
                 
                                 <table class="table table-hover">
-                                      
-                                   
-                                      
+                             
                                      <tr><td>User Name</td><td><input type="text" id="txtuname" name="txtuname"><td><div style="color: red" id="valusername" ></div></td></td></tr>
                                      <tr><td>Password</td><td><input type="password" id="txtpwd" name="txtpwd"><td><div style="color: red" id="valpassword" ></div></td></td></tr>
-                                     <tr><td></td><td><input type="submit" class="btn btn-primary" onclick="return validate()" name="save" value="Submit">
-                                    <input type="reset" class="btn btn-danger" name="Cancel" value="Cancel"></td></tr>
+                                    <tr><td></td><td><input type="submit" class="btn btn-primary" onclick="return validate()" name="save" value="Submit">
+                                    <input type="reset" class="btn btn-danger" name="Cancel" value="Cancel"></td></tr></table>
                                      <table> 
                                     
-                                 <td><a href="Registration.jsp">NewAccount</a></td></tr>
-                                     </table>
-                       </table>
+                                  <tr> <td><a href="Registration.jsp">NewAccount</a></td></tr> </table>
+                                    
+                       
                </center> 
             </form>
     </body>

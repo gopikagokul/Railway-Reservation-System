@@ -18,122 +18,127 @@
           function validate()
           {
               
-//           var status="true";
-//                
-//                var regfname=/^[A-Za-z ]{3,10}$/;
-//                var fname=document.getElementById('txtfirstname').value;
-//                
-//                if((fname.match(regfname)))
-//                {
-//                    document.getElementById('valfirstname').innerHTML="";
-//                }else
-//                {
-//                    document.getElementById('valfirstname').innerHTML="Enter First Name";
-//                    status="false";
-//                }
-//                
-//                 var regmname=/^[A-Za-z ]{0,6}$/;
-//                var mname=document.getElementById('txtmidname').value;
-//                
-//                if((mname.match(regmname)))
-//                {
-//                    document.getElementById('valmidname').innerHTML="";
-//                }else
-//                {
-//                    document.getElementById('valmidname').innerHTML="Enter Middle Name";
-//                    status="false";
-//                }
-//                
-//                
-//                 var reglname=/^[A-Za-z ]{3,10}$/;
-//                var lname=document.getElementById('txtlastname').value;
-//                
-//                if((lname.match(reglname)))
-//                {
-//                    document.getElementById('vallastname').innerHTML="";
-//                }else
-//                {
-//                    document.getElementById('vallastname').innerHTML="Enter Last Name";
-//                    status="false";
-//                }
-//                
-//                 
-//                 var regaddress=/^[A-Za-z ]{3,10}$/;
-//                var address=document.getElementById('address').value;
-//                
-//                if((address.match(regaddress)))
-//                {
-//                    document.getElementById('valaddress').innerHTML="";
-//                }else
-//                {
-//                    document.getElementById('valaddress').innerHTML="Enter Address";
-//                    status="false";
-//                }
-//                
-//                
-//                
-//                
-//                
-//                
-//                
-//                
-//                
-//                
-//                   var regph=/^[0-9 ]{0,9}$/;
-//                var ph=document.getElementById('ph').value;
-//                
-//                if((ph.match(regph)))
-//                {
-//                    document.getElementById('valph').innerHTML="";
-//                }else
-//                {
-//                    document.getElementById('valph').innerHTML="Enter Phone Number";
-//                    status="false";
-//                }
-//                
-//                 var regemail=/^[A-Za-z0-9@. ]{0,9}$/;
-//                var email=document.getElementById('email').value;
-//                
-//                if((email.match(regemail)))
-//                {
-//                    document.getElementById('valemail').innerHTML="";
-//                }else
-//                {
-//                    document.getElementById('valemail').innerHTML="Enter Email";
-//                    status="false";
-//                }
-//                
-//                 var reuname=/^[0-9 ]{0,9}$/;
-//                var uname=document.getElementById('uname').value;
-//                
-//                if((uname.match(reuname)))
-//                {
-//                    document.getElementById('valuname').innerHTML="";
-//                }else
-//                {
-//                    document.getElementById('valuname').innerHTML="Enter User Name";
-//                    status="false";
-//                }
-//                
-//                 var regpwd=/^[0-9 ]{0,9}$/;
-//                var pwd=document.getElementById('pwd').value;
-//                
-//                if((pwd.match(regpwd)))
-//                {
-//                    document.getElementById('valpwd').innerHTML="";
-//                }else
-//                {
-//                    document.getElementById('valpwd').innerHTML="Enter Password";
-//                    status="false";
-//                }
-//     if(status=="true")
-//            {
-//                return true;
-//            }else
-//            {
-//                return false;
-//           }
-//           
+           var status="true";
+                
+                var regfname=/^[A-Za-z ]{3,10}$/;
+                var fname=document.getElementById('txtfirstname').value;
+                
+               if((fname.match(regfname)))
+                {
+                    document.getElementById('valfirstname').innerHTML="";
+                }else
+               {
+                    document.getElementById('valfirstname').innerHTML="Enter First Name";
+                    status="false";
+                }
+                
+                 var regmname=/^[A-Za-z ]{0,6}$/;
+                 var mname=document.getElementById('txtmidname').value;
+                
+               if((mname.match(regmname)))
+                {
+                    document.getElementById('valmidname').innerHTML="";
+                }else
+                {
+                    document.getElementById('valmidname').innerHTML="Enter Middle Name";
+                    status="false";
+                }
+                
+               
+                 var reglname=/^[A-Za-z ]{3,10}$/;
+                var lname=document.getElementById('txtlastname').value;
+                
+                if((lname.match(reglname)))
+                {
+                    document.getElementById('vallastname').innerHTML="";
+                }else
+                {
+                    document.getElementById('vallastname').innerHTML="Enter Last Name";
+                    status="false";
+                }
+                
+                 
+                 var regaddress=/^[A-Za-z ]{3,10}$/;
+                var address=document.getElementById('address').value;
+                
+                if((address.match(regaddress)))
+                {
+                    document.getElementById('valaddress').innerHTML="";
+                }else
+                {
+                    document.getElementById('valaddress').innerHTML="Enter Address";
+                    status="false";
+                }
+                
+                
+                
+                     if ( ( document.f1.gender[0].checked == false ) && ( document.f1.gender[1].checked == false ) )
+                     {
+        alert ( "Please choose Radio Button!" );
+        document.f1.gender[0].focus();
+        return false;
+         }else
+             {
+             return true;
+                }          
+                     
+                
+                
+                var regph=/^[0-9 ]{0,9}$/;
+                var ph=document.getElementById('ph').value;
+                
+                if((ph.match(regph)))
+                {
+                    document.getElementById('valph').innerHTML="";
+                }else
+                {
+                    document.getElementById('valph').innerHTML="Enter Phone Number";
+                    status="false";
+                }
+                
+                 var regemail=/^[A-Za-z0-9@. ]{0,9}$/;
+                var email=document.getElementById('email').value;
+                
+                if((email.match(regemail)))
+                {
+                    document.getElementById('valemail').innerHTML="";
+                }else
+                {
+                    document.getElementById('valemail').innerHTML="Enter Email";
+                    status="false";
+                }
+                
+                 var reuname=/^[0-9 ]{0,9}$/;
+                var uname=document.getElementById('uname').value;
+                
+                if((uname.match(reuname)))
+                {
+                    document.getElementById('valuname').innerHTML="";
+                }else
+                {
+                    document.getElementById('valuname').innerHTML="Enter User Name";
+                    status="false";
+                }
+                
+                 var regpwd=/^[0-9 ]{0,9}$/;
+                var pwd=document.getElementById('pwd').value;
+                
+                if((pwd.match(regpwd)))
+                {
+                    document.getElementById('valpwd').innerHTML="";
+               }else
+                {
+                    document.getElementById('valpwd').innerHTML="Enter Password";
+                    status="false";
+                }
+     if(status=="true")
+            {
+                return true;
+            }else
+           {
+                return false;
+          }
+           
     }
     
     </script>
@@ -221,5 +226,6 @@ Address	</td><td>
                                 </table>
                                       
                     </center>
+        </form>
     </body>
 </html>
